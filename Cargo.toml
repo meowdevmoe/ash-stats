@@ -1,0 +1,18 @@
+[package]
+name = "ash-stats"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Statistics for product analytics: Wilson intervals, significance tests, trend-adjusted anomaly detection and Holt-Winters forecasts for daily metrics"
+license = "MIT"
+repository = "https://github.com/XXVIX/ash-stats"
+readme = "README.md"
+keywords = ["statistics", "analytics", "anomaly-detection", "forecasting", "ab-testing"]
+categories = ["mathematics", "science"]
+
+[features]
+default = ["serde"]
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true }
